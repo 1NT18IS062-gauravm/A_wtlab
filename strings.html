@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var str = "Hello once upon a time a man from china ate a bat, and now im stuck in home because of him";
+        function findLen(){
+            var stlen = str.length;
+            document.getElementById("ln").innerHTML = stlen;
+        }
+        function findTxt(){
+            var txt = document.getElementById("fintxt").value;
+            console.log(txt)
+            var pos = str.search(`${txt}`)
+            document.getElementById("tx").innerHTML = pos;
+        }
+        function slc(){
+            var num1 = document.getElementById("slc1").value;
+            var num2 = document.getElementById("slc2").value;
+            console.log(num1);
+            console.log(num2);
+            var res = str.slice(num1,num2);
+            console.log(res)
+            document.getElementById("sc").innerHTML = res;
+        }
+    </script>
+</head>
+<body>
+    <h1>String objects</h1>
+    <p>Different string functions</p>
+    <b>Hello once upon a time a man from china ate a bat, and now im stuck in home because of him</b>
+    <p>length of sentence</p>
+    <button onclick="findLen()">Find length</button>
+    <p id="ln"></p>
+    <p>position of word</p>
+    <input type="text" id="fintxt" placeholder="Enter word.." />
+    <button onclick="findTxt()">Search</button>
+    <p id="tx"></p>
+    <p>Enter 2 parameters for slicing function</p>
+    <input type="number" id="slc1" placeholder="Enter 1st param.." />&nbsp;<input type="number" id="slc2" placeholder="Enter 2nd param.." />
+    <button onclick="slc()">Search</button>
+    <p id="sc"></p>
+</body>
+</html>
