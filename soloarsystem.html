@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function planet(name, distance){
+            this.name = name;
+            this.distance = distance;
+
+            this.display = function(){
+                document.getElementById("dsp").innerHTML =  `Planet name is ${this.name} and it's distance from sun is ${this.distance} million kms`
+            }
+        }
+        function fun1(){
+            let nwPlanet = new planet("Mercury", "52.816")
+            nwPlanet.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+       
+        function fun2(){
+            let nwPlanet2 = new planet("Venus", "107.78")
+            nwPlanet2.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+function fun3(){
+            let nwPlanet2 = new planet("Earth", "151.06")
+            nwPlanet2.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+
+        function fun4(){
+            let nwPlanet2 = new planet("Mars", "247.72")
+            nwPlanet2.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+       
+
+        function fun5(){
+            let nwPlanet2 = new planet("Jupiter", "756.52")
+            nwPlanet2.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+        function fun6(){
+            let nwPlanet2 = new planet("Mercury", "52.816")
+            nwPlanet2.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+        
+        function fun7(){
+            let nwPlanet2 = new planet("Mercury", "52.816")
+            nwPlanet2.display()
+            document.getElementById("disp1").innerHTML = ""
+        }
+       
+    </script>
+   
+</head>
+<body>
+    <h1 style="text-align: center;">our solar system</h1>
+    <div style="margin-top: 50px; text-align: center; justify-items: stretch; justify-self: stretch; ">
+        <button onclick="fun1()">Mercury</button>
+        <button onclick="fun2()">Venus</button>
+        <button onclick="fun3()">Earth</button>
+        <button onclick="fun4()">Mars</button>
+        <button onclick="fun5()">Jupiter</button>
+        <button onclick="fun6()">Saturn</button>
+        <button onclick="fun7()">Uranus</button>
+        <br><br>
+        <p id="dsp"></p>
+        <p id="disp1"></p>
+    </div>
+    
+</body>
+</html>
